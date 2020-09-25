@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>测试固顶的导航</title>
+    <script type="text/javascript" src="http://a.tbcdn.cn/s/kissy/1.2.0/kissy-min.js"></script>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            background: #eee;
+            padding: 1em;
+            margin: 0;
+        }
+
+        #nav {
+            background: #4169e1;
+            color: #fff;
+            float: right;
+            right: 0;
+            top: 0;
+        }
+
+        #nav.fixed-ie6 {
+            position: absolute;
+            background: #2e8b57;
+        }
+
+        #nav.fixed {
+            position: fixed;
+            background: #2e8b57;
+        }
+
+        #nav b {
+            display: block;
+            padding: 1em;
+        }
+    </style>
+</head>
+
+<body>
+
+<p onclick="this.style.height=Math.random()*200+'px'"><b>点我切换高度</b></p>
+
+
+
+<div id="nav-container">
+    <div id="nav">
+        <div class="nav">
+            <b>AA</b>
+            <b>BB</b>
+            <b>CC</b>
+            <b>CC</b>
+        </div>
+    </div>
+</div>
+<p>hi</p>
+
+<p>hi</p>
+
+<p>hi</p>
+<p>hi</p>
+
+<p>hi</p>
+
+<p>hi</p>
+
+<p>hi</p>
+<p>hi</p>
+
+<p>hi</p>
+<p>hi</p>
+
+<p>hi</p>
+<p>hi</p>
+
+<p>hi</p>
+<p>hi</p>
+
+<p>hi</p>
+<p>hi</p>
+
+<p>hi</p>
+<p>hi</p>
+
+<p>hi</p>
+<p>hi</p>
+
+<p>hi</p>
+<p>hi</p>
+
+<p>hi</p>
+<p>hi</p>
+
+<p>hi</p>
+<p>hi</p>
+
+<p>hi</p>
+<p>hi</p>
+
+<p>hi</p>
+<p>hi</p>
+
+<p>hi</p>
+<p>hi</p>
+
+<p>hi</p>
+
+
+<script>
+    KISSY.ready(function (S) {
+        var DOM = S.DOM, Event = S.Event;
+        var nav = DOM.get('#nav');
+        var isIE6 = KISSY.UA.ie === 6;
+        var cls = isIE6 ? 'fixed-ie6' : 'fixed';
+
+        Event.on(window, 'scroll', function () {
+            var scrollTop = DOM.scrollTop();
+            scrollTop >= DOM.offset('#nav-container').top ? DOM.addClass(nav, cls) : DOM.removeClass(nav, cls);
+            if (isIE6) DOM.css(nav, {top:scrollTop + 'px'});
+        });
+
+        //默认执行一次
+        Event.fire(window, 'scroll');
+    })
+</script>
+
+	<!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root" style="left:50px;"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v7.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="118466933287668"
+  logged_in_greeting="你好 How can we help you?"
+  logged_out_greeting="你好 How can we help you?">
+      </div>
+	
+	<style>
+		.fb_dialog.fb_dialog_advanced {
+			left: 18pt;
+		}
+		
+		/* The following are for the chat box, on display and on hide */
+		iframe.fb_customer_chat_bounce_in_v2 {
+			left: 9pt;
+		}
+		iframe.fb_customer_chat_bounce_out_v2 {
+			left: 9pt;
+		}
+	</style>
+	  
+</body>
+</html>
