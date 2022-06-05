@@ -1,764 +1,666 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>夏和</title>
-
-	<!--
-    <script src="js/Element.js"></script>
-	
-    <script src="js/Websocket/UsdttwdWebsocket.js"></script>
-	
-    <script src="js/Model.js"></script>
-	-->
-	
-    <!-- jQuery -->
-    <script src="js/jquery.min.js"></script>
-    <!-- jQuery Easing -->
-    <script src="js/jquery.easing.1.3.js"></script>
-    <!-- Bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Waypoints -->
-    <script src="js/jquery.waypoints.min.js"></script>
-    <!-- Carousel -->
-    <script src="js/owl.carousel.min.js"></script>
-    <!-- countTo -->
-    <script src="js/jquery.countTo.js"></script>
-    <!-- Flexslider -->
-    <script src="js/jquery.flexslider-min.js"></script>
-    <!-- Magnific Popup -->
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/magnific-popup-options.js"></script>
-    <!-- Main -->
-    <script src="js/main.js"></script>
-
-
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Facebook and Twitter integration -->
-    <meta property="og:title" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:site_name" content="" />
-    <meta property="og:description" content="" />
-    <meta name="twitter:title" content="" />
-    <meta name="twitter:image" content="" />
-    <meta name="twitter:url" content="" />
-    <meta name="twitter:card" content="" />
-
-
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- Icomoon Icon Fonts-->
-    <link rel="stylesheet" href="css/icomoon.css">
-    <!-- Themify Icons-->
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <!-- Bootstrap  -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <!-- Magnific Popup -->
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <!-- Owl Carousel  -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <!-- Flexslider -->
-    <link rel="stylesheet" href="css/flexslider.css">
-    <!-- Theme style  -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- Modernizr JS -->
-    <script src="js/modernizr-2.6.2.min.js"></script>
-    <!-- FOR IE9 below -->
-    <!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-    <script>
-        function to_login() {
-            window.location.href = 'login.aspx';
-        }
-    </script>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="./assets/img/Logo_img.jpg">
+  <title>
+    Coinsha
+  </title>
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+  <!-- Nucleo Icons -->
+  <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <!-- CSS Files -->
+  <link id="pagestyle" href="./assets/css/material-kit-pro.css?v=3.0.0" rel="stylesheet" />
+  
 </head>
-<body style='color: black'>
-    <form id="form1" runat="server">
-        <!-- The Modal -->
-        <div id="myModal" class="modal" style="width: 100%; height: 100%; top: 0%; left: 0%">
-            <span class="close" style="color: white;">&times;</span>
-            <img class="modal-content" style="" id="img01">
-            <div id="caption">
-                <h2 id="caption_h2" style="color: #ff5126;">服務項目</h2>
-                <p id="caption_p" style="color: white;">
-                </p>
-                <p id="caption_a"><a href="https://line.me/R/ti/p/%40anz4974i" target="_blank" class="btn btn-primary btn-lg">我要購買</a></p>
 
+<body class="presentation-page bg-gray-200">
+  <!-- Navbar -->
+  <!-- -------- START HEADER 1 w/ text and image on right ------- -->
+  <div class="container position-sticky z-index-sticky top-0">
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-lg  blur border-radius-xl top-0 z-index-fixed shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
+          <div class="container-fluid px-0">
+            <a class="navbar-brand font-weight-bolder ms-sm-3  d-none d-md-block"  rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom" target="_blank">
+              Coinsha
+            </a>
+            <a class="navbar-brand font-weight-bolder ms-sm-3  d-block d-md-none"  rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom" target="_blank">
+              Coinsha
+            </a>
+            <a href="https://line.me/R/ti/p/%40anz4974i" style="background-image: linear-gradient(195deg, #f6ff51f3 0%, #ffcd4f 100%);color:black;" class="btn btn-sm  bg-gradient-primary  mb-0 ms-auto d-lg-none d-block">我要買幣</a>
+            <button class="navbar-toggler shadow-none ms-md-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon mt-2">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </span>
+            </button>
+            <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
+              <ul class="navbar-nav navbar-nav-hover ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#main">
+                    首頁
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#story">
+                    關於我們
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#service">
+                    服務
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#feedback">
+                    用戶反饋
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#contact">
+                    聯絡我們
+                  </a>
+                </li>
+              </ul>
+              <ul class="navbar-nav d-lg-block d-none">
+                <li class="nav-item">
+                  <a href="https://line.me/R/ti/p/%40anz4974i" style="background-image: linear-gradient(195deg, #f6ff51f3 0%, #ffcd4f 100%);color:black;" class="btn btn-sm  bg-gradient-primary  mb-0" onclick="smoothToPricing('pricing-soft-ui')">我要買幣</a>
+                </li>
+              </ul>
             </div>
+          </div>
+        </nav>
+        <!-- End Navbar -->
+      </div>
+    </div>
+  </div>
+  <header>
+    <section class="pt-3 pb-4" id="main">
+      <div class="page-header min-vh-100" style="background-image: url(./assets/img/Coinsha首頁.jpg);" loading="lazy">
+        <span class="mask bg-gradient-dark opacity-5"></span>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-7 d-flex justify-content-center flex-column">
+              <h1 class="text-white mb-4">專注於區塊鏈產業以及虛擬貨幣場外交易公司</h1>
+              <p class="text-white opacity-8 lead pe-5 me-5">「Coinsha 」夏和股份有限公司 
+                成立於2018年初，我們是專門開發區塊鏈產業以及虛擬貨幣場外交易的公司
+                。團隊成員皆深深被區塊鏈所吸引，致力於讓更多人了解熟悉區塊鏈相關應用
+                ，我們提供定額定投，比特幣以太幣等等主流貨幣兌換，OTC場外交易，BTM等等服務
+                ，並且絕對保障個人隱私。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </header>
+  <!-- -------- END HEADER 1 w/ text and image on right ------- -->
+  <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
+    <section class="pt-3 pb-4" id="count-stats">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 z-index-2 border-radius-xl mx-auto py-3">
+            <div class="row">
+              <div class="col-md-4 position-relative">
+                <div class="p-3 text-center">
+                  <h1 class="text-gradient text-primary"><span id="state1" countTo="100">0</span>+</h1>
+                  <h5 class="mt-3">投資人數量</h5>
+                  <p class="text-sm"></p>
+                </div>
+                <hr class="vertical dark">
+              </div>
+              <div class="col-md-4 position-relative">
+                <div class="p-3 text-center">
+                  <h1 class="text-gradient text-primary"> <span id="state2" countTo="50">0</span>+</h1>
+                  <h5 class="mt-3">主流貨幣兌換</h5>
+                  <p class="text-sm"></p>
+                </div>
+                <hr class="vertical dark">
+              </div>
+              <div class="col-md-4">
+                <div class="p-3 text-center">
+                  <h1 class="text-gradient text-primary"> <span id="state3" countTo="1000">0</span>+</h1>
+                  <h5 class="mt-3">服務客戶人數</h5>
+                  <p class="text-sm"></p>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 ms-auto me-auto text-center">
+            <h3>甚麼是場外交易? 我們可以幫您做甚麼?</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-10 ms-auto me-auto">
+            <div class="card card-plain card-blog mt-5">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card-image position-relative border-radius-lg">
+                    <div class="blur-shadow-image">
+                      <a target="_blank"
+                        href="https://www.youtube.com/watch?v=l2-Bs4wxggI">
+                        <img class="img border-radius-lg" src="assets/img/thumbnail_1280X720.jpg">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-7 my-auto ms-md-3 mt-md-auto mt-4">
+                  <h3>
+                    <a target="_blank"
+                      href="https://www.youtube.com/watch?v=l2-Bs4wxggI"
+                      class="text-dark font-weight-normal">不能不認識的場外交易所 多種幣種可交易</a>
+                  </h3>
+                  <p>
+                    現貨平台區，
+                    其實他們平台的場外交易區 OTC，
+                    能夠為交易者提供更多的幣種交易外，
+                    小編還發現絕大部份時間，
+                    場外交易區的兌換率相比現貨交易區更加好 !!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card card-plain card-blog mt-5">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card-image position-relative border-radius-lg">
+                    <div class="blur-shadow-image">
+                      <a target="_blank"
+                        href="https://rich01.com/what-is-otc-market/">
+                        <img class="img border-radius-lg" src="assets/img/20210311195225_67.jpg">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-7 my-auto ms-md-3 mt-md-auto mt-4">
+                  <h3>
+                    <a target="_blank"
+                      href="https://rich01.com/what-is-otc-market/"
+                      class="text-dark font-weight-normal">OTC(場外交易)是什麼？美國場外交易市場有哪些？交易安全嗎？</a>
+                  </h3>
+                  <p>
+                    全小鎮都在玩！一款「邊玩邊賺」遊戲，如何幫菲律賓窮戶度過疫情失業？ | 商周.com | LINE TODAY
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5" id="story">
+      <div class="container-fluid">
+        <div class="row">
+          <!--<div class="col-lg-6">-->
+          <div class="col-md-6 col-10 d-flex justify-content-center flex-column mx-auto text-lg-start text-center">
+            <h2 class="mb-4">關於我們</h2>
+            <p class="mb-2">Coinsha 夏和股份有限公司 成立於2018年初，一間專門開發區塊鏈產業以及虛擬貨幣場外交易的公司。</p>
+            <ul class="m-lg-2 m-auto">
+              <li class="mb-2">你想了解區塊鏈產業，卻覺得資訊太複雜門檻太高嗎？</li>
+              <li class="mb-2">你想投資虛擬貨幣，卻不知道如何入金與買賣嗎？</li>
+              <li class="mb-2">你想投資虛擬貨幣以及區塊鏈興新產業，卻擔心碰到詐騙集團嗎？</li>
+            </ul>
+            <p>Coinsha 提供一站式的服務，投資者只需要準備資金，我們將會幫你解決之後全部複雜繁瑣的流程，幫您把台幣(法幣)以最優惠的價格兌換為您想要的虛擬貨幣。
+              不用再擔心自己花了錢與時間還不會購買，我們團隊提供投資者最簡單最輕鬆且安全合法的方式。</p>
+          </div>
+          <div class="col-lg-4 ms-auto mt-lg-0 mt-4" style="overflow: hidden;">
+          <!--<div class="col-md-4 col-6 mx-lg-0 mx-auto px-lg-0 px-md-0 my-auto">-->
+            <img class="max-width-400 border-radius-lg shadow-lg" src="assets/img/Coinsha2.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto text-center">
+            <h6 class="text-gradient text-warning">Coinsha</h6>
+            <h2>團隊成員</h2>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-4 col-6 mb-lg-0 mb-4">
+            <div class="card shadow-lg">
+              <div class="card-header mt-n4 mx-3 p-0 bg-transparent position-relative z-index-2">
+                <a class="d-block blur-shadow-image">
+                  <img src="assets/img/people.png" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
+                </a>
+              </div>
+              <div class="card-body text-center bg-white border-radius-lg p-3 pt-0">
+                <h5 class="mt-3 mb-1 d-md-block d-none">Steve</h5>
+                <p class="mb-1 d-md-none d-block text-sm font-weight-bold text-darker">Steve</p>
+                <p class="mb-0 text-xs font-weight-bolder text-warning text-gradient text-uppercase">CEO</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-6 mb-lg-0 mb-4">
+            <div class="card shadow-lg">
+              <div class="card-header mt-n4 mx-3 p-0 bg-transparent position-relative z-index-2">
+                <a class="d-block blur-shadow-image">
+                  <img src="assets/img/people.png" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
+                </a>
+              </div>
+              <div class="card-body text-center bg-white border-radius-lg p-3 pt-0">
+                <h5 class="mt-3 mb-1 d-md-block d-none">Simon</h5>
+                <p class="mb-1 d-md-none d-block text-sm font-weight-bold text-darker">Simon</p>
+                <p class="mb-0 text-xs font-weight-bolder text-warning text-gradient text-uppercase">CFO/CMO</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-6 mb-lg-0 mb-4">
+            <div class="card shadow-lg">
+              <div class="card-header mt-n4 mx-3 p-0 bg-transparent position-relative z-index-2">
+                <a class="d-block blur-shadow-image">
+                  <img src="assets/img/people.png" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
+                </a>
+              </div>
+              <div class="card-body text-center bg-white border-radius-lg p-3 pt-0">
+                <h5 class="mt-3 mb-1 d-md-block d-none">Dison</h5>
+                <p class="mb-1 d-md-none d-block text-sm font-weight-bold text-darker">Dison</p>
+                <p class="mb-0 text-xs font-weight-bolder text-warning text-gradient text-uppercase">COO/CHRO</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="py-5" id="service">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 ms-auto me-auto text-center">
+            <h3>Coinsha 服務流程</h3>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-5 me-auto my-auto mt-md-auto mt-5">
+            <div class="p-3 info-horizontal d-flex">
+              <div class="icon me-3">
+                <img style="height: 50px;width: 50px;max-width: max-content;" src="assets/img/服務流程＿step1.png"
+                  alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
+              </div>
+              <div class="ms-4">
+                <h4>Step1. 諮詢溝通</h4>
+                <p>
+                  透過FB、Email、Line與我們聯絡，討論你想投資的金額與購買的幣種
+                </p>
+              </div>
+            </div>
+
+            <div class="p-3 info-horizontal d-flex">
+              <div class="icon me-3">
+                <img style="height: 50px;width: 50px;max-width: max-content;" src="assets/img/服務流程＿step2.png"
+                  alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
+              </div>
+              <div class="ms-4">
+                <h4>Step2. 法規流程</h4>
+                <p>
+                  確定投資額與幣種後，填寫申購表格，需提供些許個資配合中華民國法律規定KYC流程
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5 me-auto my-auto mt-md-auto mt-5">
+            <div class="p-3 info-horizontal d-flex">
+              <div class="icon me-3">
+                <img style="height: 50px;width: 50px;max-width: max-content;" src="assets/img/服務流程＿step3.png"
+                  alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
+              </div>
+              <div class="ms-4">
+                <h4>Step3. 虛擬貨幣購買</h4>
+                <p>
+                  確認個資無誤後，將會有業務人員跟您接洽，協助您購買虛擬貨幣
+                </p>
+              </div>
+            </div>
+
+            <div class="p-3 info-horizontal d-flex">
+              <div class="icon me-3 mt-1">
+                <img style="height: 50px;width: 50px;max-width: max-content;" src="assets/img/服務流程＿step6.png"
+                  alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
+              </div>
+              <div class="ms-4">
+                <h4>Step4. 法幣兌換</h4>
+                <p>
+                  團隊作業完成後，需要將虛擬貨幣換回台幣(法幣)也可連絡我們。
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="gtco-loader"></div>
+      </div>
+    </section>
 
-        <div id="page">
-            <nav class="gtco-nav" role="navigation">
-                <div class="gtco-container">
-                    <div style="float: left; width: 160px; height: 50px;">
-					
-                    </div>
-                    <div class="row" style="float: top;">
-                        <div class="col-sm-2 col-xs-12">
-                            <div id="gtco-eng1" style="float: left; height: 20px">
-                                <p style="font-size: 1px; color: white; white-space: nowrap;">&nbsp;</p>
-                            </div>
-                            <div id="gtco-logo" style="float: right;">
-                                <a href="index.html" style="color: white; white-space: nowrap;" align="left">夏和股份有限公司
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-10 text-right menu-1 main-nav" style="float: right;">
-                            <!--  -->
-                            <ul>
-                                <li class="active"><a href="#" style="color: white" data-nav-section="home">Home</a></li>
-                                <li><a href="#" style="color: white;" data-nav-section="brif">優惠簡介</a></li>
-                                <li><a href="#" style="color: white" data-nav-section="product">服務及商品</a></li>
-                                <li><a href="#" style="color: white" data-nav-section="news">最新消息</a></li>
-                                <li><a href="#" style="color: white" data-nav-section="products">場地照片</a></li>
-                                <li><a href="#" style="color: white" data-nav-section="contact">聯絡我們</a></li>
-                                <!-- <li><a style="color:white" onclick='to_login()'>會員登入</a></li> -->
-                            </ul>
-
-                        </div>
-
-                    </div>
+    <!-- Section with four info areas left & one card right with image and waves -->
+    <section class="py-6">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 ms-auto me-auto text-center">
+            <h3>Coinsha 團隊優勢</h3>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="row justify-content-start">
+              <div class="col-md-6">
+                <div class="info">
+                  <img style="height: 50px;width: 50px;max-width: max-content;" src="assets/img/團隊優勢＿1.png"
+                    alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
+                  <h5>1.報價機器人服務</h5>
+                  <p>在虛擬貨幣市場，瞬息萬變的行情波動，Coinhsa團隊提供客製化報價機器人，在你規定之價格以及特定情況下，即時傳訊息或打電話通知您。</p>
                 </div>
-            </nav>
-            <div id="gtco-hero" class="js-fullheight" data-section="home">
-                <div class="flexslider js-fullheight">
-                    <ul class="slides">
-                        <li style="background-color: black;">
-
-                            <div class="overlay"></div>
-                            <div class="container">
-                                <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
-                                    <div class="slider-text-inner">
-                                        <img src="images/role1.jpg" alt="alt"/>
-                                        <p><a href="https://line.me/R/ti/p/%40anz4974i" target="_blank" class="btn btn-primary btn-lg">我要購買</a></p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li style="background-color: black;">
-
-                            <div class="overlay"></div>
-                            <div class="container">
-                                <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
-                                    <div class="slider-text-inner">
-                                        <img src="images/role2.jpg" alt="alt"/>
-                                        <p><a href="https://line.me/R/ti/p/%40anz4974i" target="_blank" class="btn btn-primary btn-lg">我要購買</a></p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li style="background-color: black;">
-
-                            <div class="overlay"></div>
-                            <div class="container">
-                                <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
-                                    <div class="slider-text-inner">
-                                        <img src="images/role3.jpg" alt="alt"/>
-                                        <p><a href="https://line.me/R/ti/p/%40anz4974i" target="_blank" class="btn btn-primary btn-lg">我要購買</a></p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li style="background-color: black;">
-
-                            <div class="overlay"></div>
-                            <div class="container">
-                                <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
-                                    <div class="slider-text-inner">
-                                        <img src="images/role4.jpg" alt="alt"/>
-                                        <p><a href="https://line.me/R/ti/p/%40anz4974i" target="_blank" class="btn btn-primary btn-lg">我要購買</a></p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+              </div>
+              <div class="col-md-6">
+                <div class="info">
+                  <img style="height: 50px;width: 50px;max-width: max-content;" src="assets/img/團隊優勢＿2.png"
+                    alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
+                  <h5>2.最有系統的管理制度</h5>
+                  <p>我們擁有完善的管理制度，目前團隊人員分工明確，資訊不共享，穩定的服務品質以及客戶資訊的安全皆有把關。</p>
                 </div>
+              </div>
             </div>
-            <div class="gtco-section-overflow">
-                <!--style="background:rgba(0, 0, 0, 0.7); padding-bottom: 0em;-->
-                <div class="gtco-section" id="gtco-portfolio" data-section="brif" style="background-image: url(images/img_4.jpg); background-size: cover; background-repeat: no-repeat;">
-                    <div class="gtco-container">
-                        <div class="row">
-                            <div class="col-md-8 col-md-offset-2 text-center gtco-heading" style="padding-bottom: 0em; margin-bottom: 0em;">
-                                <h2 style="color: white">優惠簡介</h2>
-                                <br />
-                                <p id="brif_p" style="color: white;">
-                                    購買越多組合折數越低，立即連繫客服下單
-                                    <br />
-                                    慶開幕，滿額贈''PS4把手悠遊卡''，數量有限要買要快
-                                </p>
-                                <img src="images/1595323526623.jpg" alt="Image" class="img-responsive"/>
-
-                            </div>
-                        </div>
-                    </div>
+            <div class="row justify-content-start mt-4">
+              <div class="col-md-6">
+                <div class="info">
+                  <img style="height: 50px;width: 50px;max-width: max-content;" src="assets/img/團隊優勢＿3.png"
+                    alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
+                  <h5>3.最安全的資金風險控管</h5>
+                  <p>這邊放配合的業務層面的相關文字敘述..........</p>
                 </div>
-
-                <div id="gtco-blog" data-section="product" style="background-image: url(images/img_5.jpg); background-size: cover; background-repeat: no-repeat;">
-                    <div class="gtco-container">
-                        <div class="row">
-                            <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-                                <h2 style="color: white">服務及商品</h2>
-                            </div>
-                        </div>
-                        <br />
-                        <br />
-                        <br />
-                        <div class="row" style="text-align: center;">
-							<h3 style="color: white">主機板種類</h3>
-                            <div class="col-md-4">
-                                <a class="gtco-card-item has-text" style="background-color:gray;padding: 10px;">
-                                    <div class="gtco-text text-left">
-                                        <h2 style="color:#26ff9b;">礦機主機板(機電一體)</h2>
-                                        <p style="color: white;">
-                                            $150,000
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-4">
-                                <a  class="gtco-card-item has-text" style="background-color:gray;padding: 10px;">
-                                    <div class="gtco-text text-left">
-                                        <h2 style="color:#26ff9b;">超高階主機板</h2>
-                                        <p style="color: white;">
-                                            $300,100
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-4">
-                                <a class="gtco-card-item has-text" style="background-color:gray;padding: 10px;">
-                                    <div class="gtco-text text-left">
-                                        <h2 style="color:#26ff9b;">主機板(大板)</h2>
-                                        <p style="color: white;">
-                                            $4,500
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="clearfix visible-lg-block visible-md-block"></div>
-						    
-                            <h3 style="color: white">顯示卡種類</h3>
-                            <div class="col-md-6">
-                                <a class="gtco-card-item has-text" style="background-color:gray;padding: 10px;">
-                                    <div class="gtco-text text-left">
-                                        <h2 style="color:#26ff9b;">超高皆顯示卡</h2>
-                                        <p style="color: white;">
-                                            $49,850
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6">
-                                <a  class="gtco-card-item has-text" style="background-color:gray;padding: 10px;">
-                                    <div class="gtco-text text-left">
-                                        <h2 style="color:#26ff9b;">中階顯示卡</h2>
-                                        <p style="color: white;">
-                                            $11,950
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <br/>
-
-
-                            <h3 style="color: white">程式軟體種類</h3>
-                            <div class="col-md-4">
-                                <a class="gtco-card-item has-text" style="background-color:gray;padding: 10px;">
-                                    <div class="gtco-text text-left">
-                                        <h2 style="color:#26ff9b;">客製化智慧服務</h2>
-                                        <p style="color: white;">
-                                            $200,000
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-4">
-                                <a  class="gtco-card-item has-text" style="background-color:gray;padding: 10px;">
-                                    <div class="gtco-text text-left">
-                                        <h2 style="color:#26ff9b;">區塊鏈系統應用服務</h2>
-                                        <p style="color: white;">
-                                            $580,000
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-4">
-                                <a class="gtco-card-item has-text" style="background-color:gray;padding: 10px;">
-                                    <div class="gtco-text text-left">
-                                        <h2 style="color:#26ff9b;">加密貨幣設計與維護</h2>
-                                        <p style="color: white;">
-                                            $80,000
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="clearfix visible-lg-block visible-md-block"></div>
-                        </div>
-                    </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info">
+                  <img style="height: 50px;width: 50px;max-width: max-content;" src="assets/img/團隊優勢＿4.png"
+                    alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
+                  <h5>4.合法經營</h5>
+                  <p>這邊放配合的律師事務所相關文字敘述..........</p>
                 </div>
-
-                <!--style="background:rgba(0, 0, 0, 0.7);"-->
-                <div id="gtco-blog" data-section="news" style="background-image: url(images/img_5.jpg); background-size: cover; background-repeat: no-repeat;">
-                    <div class="gtco-container">
-                        <div class="row">
-                            <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-                                <h2 style="color: white">最新消息</h2>
-                            </div>
-                        </div>
-                        <br />
-                        <br />
-                        <br />
-                        <div class="row" style="text-align: center;">
-							<h3 style="color: white">優惠折扣</h3>
-							
-                            <div class="col-md-4">
-                                <a id="myImg1" class="gtco-card-item has-text">
-                                    <figure>
-                                        <div class="overlay"><i class="ti-plus"></i></div>
-                                        <img src="images/News/1.jpg" alt="Image" class="img-responsive"/>
-                                    </figure>
-                                    <div class="gtco-text text-left">
-                                        <h2>賽車座椅 + 方向盤</h2>
-                                        <p class="gtco-category">折扣碼 AU729</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="col-md-4">
-                                <a id="myImg2" class="gtco-card-item has-text">
-                                    <figure>
-                                        <div class="overlay"><i class="ti-plus"></i></div>
-                                        <img src="images/News/2.jpg" alt="Image" class="img-responsive"/>
-                                    </figure>
-                                    <div class="gtco-text text-left">
-                                        <h2>賽車遊戲全套</h2>
-                                        <p class="gtco-category">折扣碼 ZG517</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="col-md-4">
-                                <a id="myImg3" class="gtco-card-item has-text">
-                                    <figure>
-                                        <div class="overlay"><i class="ti-plus"></i></div>
-                                        <img src="images/News/3.jpg" alt="Image" class="img-responsive"/>
-                                    </figure>
-                                    <div class="gtco-text text-left">
-                                        <h2>新款方向盤 & 油門踏板</h2>
-                                        <p class="gtco-category">折扣碼 QS6990</p>
-                                    </div>
-                                </a>
-                            </div>
-							
-                            
-					        <div class="clearfix visible-lg-block visible-md-block"></div>
-						
-                            <div class="col-md-4">
-                                <a id="myImg4" class="gtco-card-item has-text">
-                                    <figure>
-                                        <div class="overlay"><i class="ti-plus"></i></div>
-                                        <img src="images/News/4.jpg" alt="Image" class="img-responsive"/>
-                                    </figure>
-                                    <div class="gtco-text text-left">
-                                        <h2>Switch Lite</h2>
-                                        <p class="gtco-category">折扣碼 SW8190</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="clearfix visible-sm-block"></div>
-
-                           <div class="col-md-4">
-                                <a id="myImg5" class="gtco-card-item has-text">
-                                    <figure>
-                                        <div class="overlay"><i class="ti-plus"></i></div>
-                                        <img src="images/News/5.jpg" alt="Image" class="img-responsive"/>
-                                    </figure>
-                                    <div class="gtco-text text-left">
-                                        <h2>Switch 全套</h2>
-                                        <p class="gtco-category">折扣碼 SW11090</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                           <div class="col-md-4">
-                                <a id="myImg6" class="gtco-card-item has-text">
-                                    <figure>
-                                        <div class="overlay"><i class="ti-plus"></i></div>
-                                        <img src="images/News/6.jpg" alt="Image" class="img-responsive"/>
-                                    </figure>
-                                    <div class="gtco-text text-left">
-                                        <h2>PS4 Pro</h2>
-                                        <p class="gtco-category">折扣碼 PS999</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="clearfix visible-sm-block"></div>
-							<!--
-                            <div class="clearfix visible-lg-block visible-md-block"></div>
-                            <div class="clearfix visible-sm-block"></div>
-							-->
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="gtco-section-overflow">
-                    <!--style="background:rgba(0, 0, 0, 0.7);"-->
-                    <div id="gtco-products" data-section="products" style="background-image: url(images/img_1.jpg); background-size: cover; background-repeat: no-repeat;">
-                        <div class="gtco-container">
-                            <div class="row">
-                                <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-                                    <h2 style="color: white">場地照片</h2>
-                                    <p style="color: white">
-                                        場地歡迎預約活動或會談: 02-2712-1314 轉 805<br />
-                                        (請雙擊檢視圖片)
-                                    </p>
-                                </div>
-                            </div>
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <div class="row">
-                                <div class="owl-carousel owl-carousel-carousel">
-                                    <div class="item">
-                                        <img class="ffuut" id="product1" src="images/PlacePhoto/1.jpg" alt="alt">
-                                    </div>
-                                    <div class="item">
-                                        <img class="ffuut" src="images/PlacePhoto/2.jpg" alt="alt">
-                                    </div>
-									<!--
-                                    <div class="item">
-                                        <img class="ffuut" src="images/PlacePhoto/3.jpg" alt="alt">
-                                    </div>
-									-->
-                                    <div class="item">
-                                        <img class="ffuut" src="images/PlacePhoto/4.jpg" alt="alt">
-                                    </div>
-									<!--
-                                    <div class="item">
-                                        <img class="ffuut" src="images/PlacePhoto/5.jpg" alt="alt">
-                                    </div>
-                                    <div class="item">
-                                        <img class="ffuut" src="images/PlacePhoto/6.jpg" alt="alt">
-                                    </div>
-                                    <div class="item">
-                                        <img class="ffuut" src="images/PlacePhoto/7.jpg" alt="alt">
-                                    </div>
-                                    <div class="item">
-                                        <img class="ffuut" src="images/PlacePhoto/8.jpg" alt="alt">
-                                    </div>
-									-->
-                                    <div class="item">
-                                        <img class="ffuut" src="images/PlacePhoto/9.jpg" alt="alt">
-                                    </div>
-                                    <div class="item">
-                                        <img class="ffuut" src="images/PlacePhoto/10.jpg" alt="alt">
-                                    </div>
-                                    <div class="item">
-                                        <img class="ffuut" src="images/PlacePhoto/11.jpg" alt="alt">
-                                    </div>
-									<!--
-                                    <div class="item">
-                                        <img class="ffuut" src="images/PlacePhoto/12.jpg" alt="alt">
-                                    </div>
-                                    <div class="item">
-                                        <img class="ffuut" src="images/PlacePhoto/13.jpg" alt="alt">
-                                    </div>
-                                    <div class="item">
-                                        <img class="ffuut" src="images/PlacePhoto/14.jpg" alt="alt">
-                                    </div>
-									-->
-                                    <div class="item">
-                                        <img class="ffuut" src="images/PlacePhoto/15.jpg" alt="alt">
-                                    </div>
-                                    <div class="item">
-                                        <img class="ffuut" src="images/PlacePhoto/16.jpg" alt="alt">
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="gtco-contact" data-section="contact" class="gtco-cover gtco-cover-xs" style="background-image: url(images/img_bg_2.jpg);">
-                    <div class="overlay"></div>
-                    <div class="gtco-container">
-                        <div class="row text-center">
-                            <div class="display-t">
-                                <div class="display-tc">
-                                    <div class="col-md-12">
-                                        <h3>創辦人：Steve</h3>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <h3>公司地址：台北市松山區南京東路四段1號8樓</h3>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <h3 id="contact_h3">電話：02-2712-1314 轉 805</h3>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <!--<h3> 營業時間：08:00-19:00（週日公休） </h3>-->
-                                    </div>
-                                    <div class="col-md-12">
-                                        <h3>Line@: <a href="https://line.me/R/ti/p/%40anz4974i">
-                                            <img height="36" border="0" alt="加入好友" src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png"></a>
-                                        </h3>
-                                        <!--
-                                    <img src="images/Line.jpg" style="width:200px;height:200px" alt="alt">
-                                    -->
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <footer id="gtco-footer" role="contentinfo" style="background: rgba(0, 0, 0, 0.7);">
-                    <div class="gtco-container">
-
-                        <div class="row copyright">
-                            <div class="col-md-12">
-                                <p class="pull-left">
-                                    <small class="block" style="color: white">夏和股份有限公司</small>
-                                </p>
-                                <p class="pull-right">
-                                    <ul class="gtco-social-icons pull-right">
-                                        <!--<li><a href="#"><i class="icon-twitter"></i></a></li>-->
-                                        <!--<li><a href="https://www.facebook.com/anz4974i/"><i class="icon-facebook"></i></a></li>-->
-                                    </ul>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
+              </div>
             </div>
-
-            <div class="gototop js-top">
-                <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+          </div>
+          <div class="col-lg-4 ms-auto mt-lg-0 mt-4" style="overflow: hidden;">
+            <div class="card">
+              <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                <a class="d-block blur-shadow-image">
+                  <img src="assets/img/242645090_842849226401830_8842188221738189942_n.jpg" alt="img-colored-shadow"
+                    class="img-fluid border-radius-lg">
+                </a>
+              </div>
             </div>
-    </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Section with four info areas left & one card right with image and waves -->
+
+    <section class="py-6" id="feedback">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 ms-auto me-auto text-center">
+            <h3>用戶反饋</h3>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-lg-4 ms-auto mt-lg-0 mt-4" style="overflow: hidden;width: 43.333333%;">
+            <h4>投資人反饋</h4>
+            <div class="card">
+              <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2" style="margin-top: 0rem!important;">
+                <a class="d-block blur-shadow-image">
+                  <img src="assets/img/diolog.png" alt="img-colored-shadow" class="img-fluid border-radius-lg">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 ms-auto mt-lg-0 mt-4" style="overflow: hidden;width: 43.333333%;">
+            <h4>客戶反饋</h4>
+            <div class="card">
+              <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2" style="margin-top: 0rem!important;">
+                <a class="d-block blur-shadow-image">
+                  <img src="assets/img/diolog.png" alt="img-colored-shadow" class="img-fluid border-radius-lg">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5" id="mapp">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 ms-auto me-auto text-center">
+            <h3>公司位置</h3>
+            <h5>我們的公司在這裡，就在WorldWideHouse，歡迎來參觀公司 <br/> 也可以在這裡面交，絕對安全有保障</h5> <br/>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28918.10625489307!2d121.5608076571777!3d25.042106260647962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abe5f25721e7%3A0x538e74d23ceaac56!2zMTA15Y-w5YyX5biC5p2-5bGx5Y2A5rCR55Sf5p2x6Lev5LiJ5q61MTMx6Jmf!5e0!3m2!1szh-TW!2stw!4v1654422061850!5m2!1szh-TW!2stw" width="1200" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      
+        </div>
+        </div>
+    </section>
+
+    <section class="py-5" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 ms-auto me-auto text-center">
+            <h3>聯絡我們</h3>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-5 me-auto my-auto mt-md-auto mt-5">
+            <div class="p-3 info-horizontal d-flex">
+              <div class="icon me-3">
+                <img style="height: 50px;width: 50px;max-width: max-content;" src="assets/img/gmail.png"
+                  alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
+              </div>
+              <div class="ms-4">
+                <h4>Email</h4>
+                <p>
+                  coinsha@gmail.com
+                </p>
+              </div>
+            </div>
+            <div class="p-3 info-horizontal d-flex">
+              <div class="icon me-3">
+                <a href="https://www.facebook.com/anz4974i">
+                  <img style="height: 50px;width: 50px;max-width: max-content;" src="assets/img/facebook.png"
+                    alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
+                </a>
+              </div>
+              <div class="ms-4">
+                <h4>FB連結</h4>
+                <p>
+                  COINSHA 場外交易最佳夥伴 | Facebook
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5 me-auto my-auto mt-md-auto mt-5">
+            <div class="p-3 info-horizontal d-flex">
+              <div class="icon me-3">
+                <a href="https://line.me/R/ti/p/%40anz4974i">
+                  <img style="height: 50px;width: 50px;max-width: max-content;" src="assets/img/instagram.png"
+                    alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
+                </a>
+              </div>
+              <div class="ms-4">
+                <h4>Line@</h4>
+                <p>
+                  COINSHA | 虛擬貨幣場外交易 x 優質商家
+                </p>
+              </div>
+            </div>
+            <div class="p-3 info-horizontal d-flex">
+              <div class="icon me-3 mt-1">
+                <a href="https://www.youtube.com/">
+                  <img style="height: 50px;width: 50px;max-width: max-content;" src="assets/img/youtube.png"
+                    alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
+                </a>
+              </div>
+              <div class="ms-4">
+                <h4>Youtube連結</h4>
+                <p>
+                  Coinsha 場外交易最佳夥伴 - YouTube
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+   
+    <!-- START Blogs w/ 3 rows w/ image on left & title, text, author on end-->
 
 
+    <!-- END Blogs w/ 3 rows w/ image on left & title, text, author on end-->
+    <!-- -------   START PRE-FOOTER 2 - simple social line w/ title & 3 buttons    -------- -->
+    <div class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 ms-auto">
+            <h4 class="mb-1">感謝你的分支持!</h4>
+            <p class="lead mb-0">分享此網站</p>
+          </div>
+          <div class="col-lg-5 me-lg-auto my-lg-auto text-lg-end mt-5">
+            <a href="https://twitter.com/intent/tweet?url=https://www.axietothemars.com"
+              class="btn btn-twitter mb-0 me-2" target="_blank">
+              <i class="fab fa-twitter me-1"></i> Tweet
+            </a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.axietothemars.com"
+              class="btn btn-facebook mb-0 me-2" target="_blank">
+              <i class="fab fa-facebook-square me-1"></i> Share
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------   END PRE-FOOTER 2 - simple social line w/ title & 3 buttons    -------- -->
+  </div>
+  <footer class="footer pt-5 mt-5">
+    <div class="container">
+      <div class=" row">
+        <div class="col-md-3 mb-4 ms-auto">
+          <div>
+            <h6 class="font-weight-bolder mb-4">Coinsha</h6>
+          </div>
+          <div>
+            <ul class="d-flex flex-row ms-n3 nav">
+              <li class="nav-item">
+                <a class="nav-link pe-1" href="https://www.facebook.com/anz4974i" target="_blank">
+                  <i class="fab fa-facebook text-lg opacity-8"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-1" href="https://www.instagram.com/" target="_blank">
+                  <i class="fab fa-instagram text-lg opacity-8"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-1" href="https://www.youtube.com/"
+                  target="_blank">
+                  <i class="fab fa-youtube text-lg opacity-8"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6 col-6 mb-4">
 
-    <!-- 最新一 -->
-    <script>
-        // Get the modal
-        var modal = document.getElementById('myModal');
+        </div>
+        <div class="col-md-2 col-sm-6 col-6 mb-4">
 
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById('myImg1');
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("caption");
-        var caption_h2Text = document.getElementById("caption_h2");
-        var caption_pText = document.getElementById("caption_p");
-        img.onclick = function () {
-            modal.style.display = "block";
-            //modalImg.src = this.src;
-            modalImg.src = "images/News/1.jpg";
-            caption_h2Text.innerHTML = "賽車座椅 + 方向盤";
-            //caption_pText.innerHTML = "$79,989";
-        }
+        </div>
+        <div class="col-md-2 col-sm-6 col-6 mb-4 me-auto">
 
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-    </script>
-
-    <!-- 最新二 -->
-    <script>
-        // Get the modal
-        var modal = document.getElementById('myModal');
-
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById('myImg2');
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("caption");
-        var caption_h2Text = document.getElementById("caption_h2");
-        var caption_pText = document.getElementById("caption_p");
-        img.onclick = function () {
-            modal.style.display = "block";
-            //modalImg.src = this.src;
-            modalImg.src = "images/News/2.jpg";
-            caption_h2Text.innerHTML = "賽車遊戲全套";
-            //caption_pText.innerHTML = "$228,000";
-        }
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-    </script>
-
-    <!-- 最新三 -->
-    <script>
-        // Get the modal
-        var modal = document.getElementById('myModal');
-
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById('myImg3');
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("caption");
-        var caption_h2Text = document.getElementById("caption_h2");
-        var caption_pText = document.getElementById("caption_p");
-        img.onclick = function () {
-            modal.style.display = "block";
-            //modalImg.src = this.src;
-            modalImg.src = "images/News/3.jpg";
-            caption_h2Text.innerHTML = "新款方向盤 & 油門踏板";
-            //caption_pText.innerHTML = "$6,990";
-        }
-
-		// Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-	</script>
-
-     <!-- 最新四 -->
-    <script>
-        // Get the modal
-        var modal = document.getElementById('myModal');
-
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById('myImg4');
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("caption");
-        var caption_h2Text = document.getElementById("caption_h2");
-        var caption_pText = document.getElementById("caption_p");
-        img.onclick = function () {
-            modal.style.display = "block";
-            //modalImg.src = this.src;
-            modalImg.src = "images/News/4.jpg";
-            caption_h2Text.innerHTML = "Switch Lite";
-            //caption_pText.innerHTML = "$8,190";
-        }
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-    </script>
-
-
-    <!-- 最新五 -->
-    <script>
-        // Get the modal
-        var modal = document.getElementById('myModal');
-
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById('myImg5');
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("caption");
-        var caption_h2Text = document.getElementById("caption_h2");
-        var caption_pText = document.getElementById("caption_p");
-        img.onclick = function () {
-            modal.style.display = "block";
-            //modalImg.src = this.src;
-            modalImg.src = "images/News/4.jpg";
-            caption_h2Text.innerHTML = "Switch 全套";
-            //caption_pText.innerHTML = "$11,090";
-        }
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-    </script>
-
-    <!-- 最新六 -->
-    <script>
-        // Get the modal
-        var modal = document.getElementById('myModal');
-
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById('myImg6');
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("caption");
-        var caption_h2Text = document.getElementById("caption_h2");
-        var caption_pText = document.getElementById("caption_p");
-        img.onclick = function () {
-            modal.style.display = "block";
-            //modalImg.src = this.src;
-            modalImg.src = "images/News/4.jpg";
-            caption_h2Text.innerHTML = "PS4 Pro";
-            //caption_pText.innerHTML = "$19,999";
-        }
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-    </script>
-
-    <script>
-		// Get the modal
-        var modal = document.getElementById('myModal');
-		// Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-		
-        $(document).ready(function () {
-            $('.ffuut').dblclick(function () {
-                // do something
-                var modal = document.getElementById('myModal');
-
-                // Get the image and insert it inside the modal - use its "alt" text as a caption
-                //var img = document.getElementById('product1');
-                var img = document.getElementsByClassName('ffuut');
-                var modalImg = document.getElementById("img01");
-                var captionText = document.getElementById("caption");
-
-                // alert('Picture fade out...')
-                modal.style.display = "block";
-                modalImg.src = this.src;
-                //modalImg.src = "images/第3張.png";
-                captionText.innerHTML = "";
-                // $(this).fadeOut().slow();
-            });
-        });
-	</script>
-
-
+        </div>
+        <div class="col-12">
+          <div class="text-center">
+            <p class="text-dark my-4 text-sm font-weight-normal">
+              Coinsha ©
+              <script>
+                document.write(new Date().getFullYear())
+              </script>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--   Core JS Files   -->
+  <script src="./assets/js/core/popper.min.js"></script>
+  <script src="./assets/js/core/bootstrap.min.js"></script>
+  <script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <!--  Plugin for TypedJS, full documentation here: https://github.com/mattboldt/typed.js/ -->
+  <script src="./assets/js/plugins/typedjs.js"></script>
+  <!--  Plugin for TypedJS, full documentation here: https://github.com/inorganik/CountUp.js -->
+  <script src="./assets/js/plugins/countup.min.js"></script>
+  <!--  Plugin for Parallax, full documentation here: https://github.com/dixonandmoe/rellax -->
+  <script src="./assets/js/plugins/rellax.min.js"></script>
+  <!--  Plugin for TiltJS, full documentation here: https://gijsroge.github.io/tilt.js/ -->
+  <script src="./assets/js/plugins/tilt.min.js"></script>
+  <!--  Plugin for Selectpicker - ChoicesJS, full documentation here: https://github.com/jshjohnson/Choices -->
+  <script src="./assets/js/plugins/choices.min.js"></script>
+  <!--  Plugin for Parallax, full documentation here: https://github.com/wagerfield/parallax  -->
+  <script src="./assets/js/plugins/parallax.min.js"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+  <!--  Plugin for the blob animation -->
+  <script src="./assets/js/plugins/anime.min.js" type="text/javascript"></script>
+  <!-- Control Center for Material UI Kit: parallax effects, scripts for the example pages etc -->
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>
+  <script>
+    if (document.getElementById('state1')) {
+      const countUp = new CountUp('state1', document.getElementById("state1").getAttribute("countTo"));
+      if (!countUp.error) {
+        countUp.start();
+      } else {
+        console.error(countUp.error);
+      }
+    }
+    if (document.getElementById('state2')) {
+      const countUp1 = new CountUp('state2', document.getElementById("state2").getAttribute("countTo"));
+      if (!countUp1.error) {
+        countUp1.start();
+      } else {
+        console.error(countUp1.error);
+      }
+    }
+    if (document.getElementById('state3')) {
+      const countUp2 = new CountUp('state3', document.getElementById("state3").getAttribute("countTo"));
+      if (!countUp2.error) {
+        countUp2.start();
+      } else {
+        console.error(countUp2.error);
+      };
+    }
+  </script>
 </body>
+
 </html>
