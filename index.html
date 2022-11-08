@@ -24,6 +24,24 @@
   
 </head>
 <style>
+@media  (max-width: 992px) { 
+  .imgHead{
+    display: none;
+  }
+  .spanHead{
+    display:flex;
+  }
+}
+
+@media  (min-width: 992px) { 
+  .imgHead{
+    width: 10vw;
+  }
+  .spanHead{
+    display: none;
+  }
+}
+
 @media  (min-width: 1200px) { 
   .t0{    
     min-height: 180px !important;
@@ -56,6 +74,7 @@
   .footInfo{
     min-height: 348px !important;
   }
+
 }
 
 @media  (max-width: 1201px) { 
@@ -93,6 +112,8 @@
 
 }
 
+
+
 </style>
 <body class="presentation-page bg-gray-200" style="background-color: #fff3db !important;">
   <div class="container position-sticky z-index-sticky top-0">
@@ -100,12 +121,12 @@
       <div class="col-12">
         <nav class="navbar navbar-expand-lg  blur border-radius-xl top-0 z-index-fixed shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
           <div class="container-fluid px-0">
-            <a class="navbar-brand font-weight-bolder ms-sm-3  d-none d-md-block"  rel="tooltip" title="" data-placement="bottom" target="_blank" style="color: #731d04">
+            <!-- <a class="navbar-brand font-weight-bolder ms-sm-3  d-none d-md-block"  rel="tooltip" title="" data-placement="bottom" target="_blank" style="color: #731d04">
               CTcoin
             </a>
             <a class="navbar-brand font-weight-bolder ms-sm-3  d-block d-md-none"  rel="tooltip" title="" data-placement="bottom" target="_blank" style="color: #731d04">
               CTcoin
-            </a>
+            </a> -->
             <button class="navbar-toggler shadow-none ms-md-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon mt-2">
                 <span class="navbar-toggler-bar bar1"></span>
@@ -114,47 +135,59 @@
               </span>
             </button>
             <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
-              <ul class="navbar-nav navbar-nav-hover ms-auto">
-                <li class="nav-item">
+              <ul class="navbar-nav navbar-nav-hover ms-auto" style="margin: auto !important;">
+                <!-- <li class="nav-item">
                   <a class="nav-link text-black" href="#main" 
                   style="color:#731d04" >
                     首頁
                   </a>
-                </li>
+                </li> -->
                 <li class="nav-item">
                   <a class="nav-link text-black" href="#about"
                   style="color:#731d04" >
-                    關於我們
+                    <img class="imgHead"
+                      style="height: auto;" src="assets/img/head/h1.png">
+                    <span class="spanHead">關於我們</span>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link text-black" href="#tradeFlow"
                   style="color:#731d04" >
-                    交易流程
+                  <img class="imgHead"
+                      style="height: auto;" src="assets/img/head/h2.png">
+                    <span class="spanHead">交易流程</span>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link text-black" href="#attention"
                   style="color:#731d04" >
-                    注意事項
+                  <img class="imgHead"
+                      style="height: auto;" src="assets/img/head/h3.png">
+                    <span class="spanHead">注意事項</span>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link text-black" href="#term"
                   style="color:#731d04" >
-                    防範洗錢及詐騙聲明
+                  <img class="imgHead"
+                      style="height: auto;" src="assets/img/head/h4.png">
+                    <span class="spanHead">防範洗錢及詐騙聲明</span>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link text-black" href="#QA"
                   style="color:#731d04" >
-                    常見問題
+                  <img class="imgHead"
+                      style="height: auto;" src="assets/img/head/h5.png">
+                    <span class="spanHead">常見問題</span>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link text-black" href="#join"
                   style="color:#731d04" >
-                    加入會員
+                  <img class="imgHead"
+                      style="height: auto;" src="assets/img/head/h6.png">
+                    <span class="spanHead">加入會員</span>
                   </a>
                 </li>
               </ul>
