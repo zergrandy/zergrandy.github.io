@@ -1,460 +1,272 @@
 <!DOCTYPE html>
-<html lang="en" itemscope itemtype="http://schema.org/WebPage" style="min-width: 100vw;">
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="./assets/img/logo.png">
+  <!-- <link rel="icon" type="image/png" href="./assets/img/favicon.png"> -->
   <title>
-    CTcoin
+    Aio Digital Technology
   </title>
   <!--     Fonts and icons     -->
-  <link rel="stylesheet" type="text/css"
-    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,200|Open+Sans+Condensed:700" rel="stylesheet">
   <!-- Nucleo Icons -->
   <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
   <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
   <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-  <!-- Material Icons -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
   <!-- CSS Files -->
-  <link id="pagestyle" href="./assets/css/material-kit-pro.css?v=3.0.0" rel="stylesheet" />
-  
+  <link id="pagestyle" href="./assets/css/now-design-system-pro.css?v=2.2.0" rel="stylesheet" />
 </head>
-<style>
-@media  (max-width: 992px) { 
-  .imgHead{
-    display: none;
-  }
-  .spanHead{
-    display:flex;
-  }
-  .aHead{
-    display: block;
-  }
-}
 
-@media  (min-width: 992px) { 
-  .imgHead{
-    width: 10vw;
-  }
-  .spanHead{
-    display: none;
-  }
-  .aHead{
-    display: none !important;
-  }
-}
+<body class="presentation-page">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white  navbar-transparent position-fixed w-100 top-0 z-index-3 shadow-none py-2 start-0 end-0" id="navbarPresentationShadow">
+    <div class="container pt-1">
+      <a href="index.html" class="navbar-brand font-weight-bolder ms-sm-3" rel="tooltip" data-placement="bottom" >
+        Aio Digital Technology
+      </a>
+      <button class="navbar-toggler shadow-none ms-md-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon mt-2">
+          <span class="navbar-toggler-bar bar1"></span>
+          <span class="navbar-toggler-bar bar2"></span>
+          <span class="navbar-toggler-bar bar3"></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
+        <ul class="navbar-nav navbar-nav-hover mx-auto">
+          <li class="nav-item dropdown dropdown-hover mx-6">
+            <a href="pages/about-us.html"  role="button" class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center text-dark" id="dropdownMenuPages"  >
+              Service
+            </a>
+          </li>
+            <li class="nav-item dropdown dropdown-hover mx-6">
+            <a href="pages/terms.html"  role="button" class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center text-dark" id="dropdownMenuPages" >
+              Privacy Policy
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+  <header class="header-2">
+    <div class="page-header mx-4 mb-0 mt-6 border-radius-xl min-vh-75" style="background-image: url('./assets/img/bg-presentation.jpg')">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h1 class="text-white pt-3 mt-n6 display-2 font-weight-bolder">Aio Digital Technology</h1>
+            <h4 class="text-white ">Leading brand in global blockchain development</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-@media  (min-width: 1200px) { 
-  .t0{    
-    min-height: 180px !important;
-  }
-  .t1{    
-    min-height: 1041px !important;    
-  }
-  .t2{    
-    min-height: 1421px !important;    
-  }
-  .t3{
-    min-height: 2647px !important;
-  }
-  .t4{
-    min-height: 1061px !important;
-  }
-  .t5{
-    min-height: 1275px !important;
-  }
-  .t6{
-    min-height: 3852px !important;
-  }
-  .t7{
-    min-height: 756px !important;
-  }
-  .t8{
-    min-height: 348px !important;
-  }
-
-  .footInfo{
-    min-height: 348px !important;
-  }
-
-}
-
-@media  (max-width: 1201px) { 
-  .t0{
-    min-height: calc(100vw * 180 / 1200 ) !important;
-  }
-  .t1{
-    min-height: calc(100vw * 1041 / 1200 ) !important;
-  }
-  .t2{
-    min-height: calc(100vw * 1421 / 1200) !important;
-  }
-  .t3{
-    min-height: calc(100vw * 2647 / 1200) !important;
-  }
-  .t4{
-    min-height: calc(100vw * 1061 / 1200) !important;
-  }
-  .t5{
-    min-height: calc(100vw * 1275 / 1200) !important;
-  }
-  .t6{
-    min-height: calc(100vw * 3852 / 1200) !important;
-  }
-  .t7{
-    min-height: calc(100vw * 772 / 1200) !important;
-  }
-  .t8{    
-    min-height: calc(100vw * 348 / 1200) !important;
-  }
-
-  .footInfo{
-    min-height: 348px !important;
-  }
-
-}
-
-
-
-</style>
-<body class="presentation-page bg-gray-200" style="background-color: #fff3db !important;">
-  <div class="container position-sticky z-index-sticky top-0">
+  <!-- -------- START Content Presentation Docs ------- -->
+  <div class="container mt-sm-5">
+    <div class="page-header min-vh-50 my-sm-3 mb-3 border-radius-lg" style="background-image: url('./assets/img/bg22.jpg');">
+      <span class="mask bg-gradient-dark"></span>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 ms-lg-5">
+            <h1 class="text-white">Development service area.</h1>
+            <p class="lead text-white opacity-8">From DApp through smart contract and blockchain wallet...etc. AIO Digital Technology offers a customized blockchain development service.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
     <div class="row">
-      <div class="col-12">
-        <nav class="navbar navbar-expand-lg  blur border-radius-xl top-0 z-index-fixed shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
-          <div class="container-fluid px-0">
-            <a class="aHead navbar-brand font-weight-bolder ms-sm-3  d-none d-md-block"  rel="tooltip" title="" data-placement="bottom" target="_blank" style="color: #731d04">
-              CTcoin
-            </a>
-            <a class="aHead navbar-brand font-weight-bolder ms-sm-3  d-block d-md-none"  rel="tooltip" title="" data-placement="bottom" target="_blank" style="color: #731d04">
-              CTcoin
-            </a>
-            <button class="navbar-toggler shadow-none ms-md-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon mt-2">
-                <span class="navbar-toggler-bar bar1"></span>
-                <span class="navbar-toggler-bar bar2"></span>
-                <span class="navbar-toggler-bar bar3"></span>
-              </span>
-            </button>
-            <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
-              <ul class="navbar-nav navbar-nav-hover ms-auto" style="margin: auto !important;">
-                <!-- <li class="nav-item">
-                  <a class="nav-link text-black" href="#main" 
-                  style="color:#731d04" >
-                    首頁
-                  </a>
-                </li> -->
-                <li class="nav-item">
-                  <a class="nav-link text-black" href="#about"
-                  style="color:#731d04" >
-                    <img class="imgHead"
-                      style="height: auto;" src="assets/img/head/h1.png">
-                    <span class="spanHead">關於我們</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-black" href="#tradeFlow"
-                  style="color:#731d04" >
-                  <img class="imgHead"
-                      style="height: auto;" src="assets/img/head/h2.png">
-                    <span class="spanHead">交易流程</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-black" href="#attention"
-                  style="color:#731d04" >
-                  <img class="imgHead"
-                      style="height: auto;" src="assets/img/head/h3.png">
-                    <span class="spanHead">注意事項</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-black" href="#term"
-                  style="color:#731d04" >
-                  <img class="imgHead"
-                      style="height: auto;" src="assets/img/head/h4.png">
-                    <span class="spanHead">防範洗錢及詐騙聲明</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-black" href="#QA"
-                  style="color:#731d04" >
-                  <img class="imgHead"
-                      style="height: auto;" src="assets/img/head/h5.png">
-                    <span class="spanHead">常見問題</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-black" href="#join"
-                  style="color:#731d04" >
-                  <img class="imgHead"
-                      style="height: auto;" src="assets/img/head/h6.png">
-                    <span class="spanHead">加入會員</span>
-                  </a>
-                </li>
-              </ul>
+      <div class="col-lg-4">
+        <div class="info-horizontal bg-gradient-primary border-radius-lg p-5">
+          <div class="icon">
+            <svg class="text-white" width="25px" height="25px" viewBox="0 0 46 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <title>delivery-fast</title>
+              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g transform="translate(-2320.000000, -741.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                  <g transform="translate(1716.000000, 291.000000)">
+                    <g id="delivery-fast" transform="translate(604.000000, 450.000000)">
+                      <rect class="color-background" opacity="0.601143973" x="0" y="0" width="17.25" height="3.83333333"></rect>
+                      <rect class="color-background" opacity="0.601143973" x="3.83333333" y="7.66666667" width="13.4166667" height="3.83333333"></rect>
+                      <rect class="color-background" opacity="0.601143973" x="7.66666667" y="15.3333333" width="9.58333333" height="3.83333333"></rect>
+                      <rect class="color-background" opacity="0.601888021" x="11.5" y="23" width="5.75" height="3.83333333"></rect>
+                      <path class="color-foreground" d="M44.9400833,19.3679167 L38.0611667,15.9294167 L36.3591667,9.1195 C36.1464167,8.26466667 35.37975,7.66666667 34.5,7.66666667 L31.3854167,7.66666667 L21.0833333,7.66666667 C21.0833333,7.66666667 21.0833333,31.5310833 21.0833333,32.5833333 C21.0833333,33.6355833 21.1810833,34.5 21.1810833,34.5 C21.6640833,38.801 25.2808333,42.1666667 29.7083333,42.1666667 C34.1358333,42.1666667 37.7525833,38.801 38.2355833,34.5 L44.0833333,34.5 C45.1413333,34.5 46,33.6413333 46,32.5833333 L46,21.0833333 C46,20.3569167 45.5898333,19.69375 44.9400833,19.3679167 Z M29.7083333,38.3333333 C27.0671667,38.3333333 24.9166667,36.18475 24.9166667,33.5416667 C24.9166667,30.8985833 27.0671667,28.75 29.7083333,28.75 C32.3495,28.75 34.5,30.8985833 34.5,33.5416667 C34.5,36.18475 32.3495,38.3333333 29.7083333,38.3333333 Z M24.9166667,17.25 L24.9166667,11.5 L33.2426667,11.5 L34.5,17.25 L24.9166667,17.25 Z"></path>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div class="description ps-5">
+            <h5 class="text-white">Cryptocurrency Exchanges</h5>
+            <p class="text-white">Building your own cryptocurrency exchanges, achieving your blockchain business. Professional UX/UX designer, providing the best design. Create your own cryptocurrency exchange with our customized service!
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 px-lg-1 mt-lg-0 mt-4">
+        <div class="info-horizontal bg-gray-100 border-radius-lg p-5">
+          <div class="icon">
+            <svg class="text-primary" width="25px" height="25px" viewBox="0 0 40 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <title>document</title>
+              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g transform="translate(-1870.000000, -591.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                  <g transform="translate(1716.000000, 291.000000)">
+                    <g transform="translate(154.000000, 300.000000)">
+                      <path class="color-foreground" d="M40,40 L36.3636364,40 L36.3636364,3.63636364 L5.45454545,3.63636364 L5.45454545,0 L38.1818182,0 C39.1854545,0 40,0.814545455 40,1.81818182 L40,40 Z" opacity="0.603585379"></path>
+                      <path class="color-background" d="M30.9090909,7.27272727 L1.81818182,7.27272727 C0.814545455,7.27272727 0,8.08727273 0,9.09090909 L0,41.8181818 C0,42.8218182 0.814545455,43.6363636 1.81818182,43.6363636 L30.9090909,43.6363636 C31.9127273,43.6363636 32.7272727,42.8218182 32.7272727,41.8181818 L32.7272727,9.09090909 C32.7272727,8.08727273 31.9127273,7.27272727 30.9090909,7.27272727 Z M18.1818182,34.5454545 L7.27272727,34.5454545 L7.27272727,30.9090909 L18.1818182,30.9090909 L18.1818182,34.5454545 Z M25.4545455,27.2727273 L7.27272727,27.2727273 L7.27272727,23.6363636 L25.4545455,23.6363636 L25.4545455,27.2727273 Z M25.4545455,20 L7.27272727,20 L7.27272727,16.3636364 L25.4545455,16.3636364 L25.4545455,20 Z"></path>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div class="description ps-5">
+            <h5>Blockchain Wallet Development</h5>
+            <p>With our blockchain technology, knowledge and experience. Our blockchain developers will easily develop the blockchain wallet that can retain multi-chain and hold multi-crypto currency.
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mt-lg-0 mt-4">
+        <div class="info-horizontal bg-gray-100 border-radius-lg p-5">
+          <div class="icon">
+            <svg class="text-primary" width="25px" height="25px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <title>ungroup</title>
+              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g transform="translate(-2170.000000, -442.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                  <g transform="translate(1716.000000, 291.000000)">
+                    <g id="ungroup" transform="translate(454.000000, 151.000000)">
+                      <path class="color-background" d="M38.1818182,10.9090909 L32.7272727,10.9090909 L32.7272727,30.9090909 C32.7272727,31.9127273 31.9127273,32.7272727 30.9090909,32.7272727 L10.9090909,32.7272727 L10.9090909,38.1818182 C10.9090909,39.1854545 11.7236364,40 12.7272727,40 L38.1818182,40 C39.1854545,40 40,39.1854545 40,38.1818182 L40,12.7272727 C40,11.7236364 39.1854545,10.9090909 38.1818182,10.9090909 Z"></path>
+                      <path class="color-foreground" d="M27.2727273,29.0909091 L1.81818182,29.0909091 C0.812727273,29.0909091 0,28.2781818 0,27.2727273 L0,1.81818182 C0,0.814545455 0.812727273,0 1.81818182,0 L27.2727273,0 C28.2781818,0 29.0909091,0.814545455 29.0909091,1.81818182 L29.0909091,27.2727273 C29.0909091,28.2781818 28.2781818,29.0909091 27.2727273,29.0909091 Z"></path>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div class="description ps-5">
+            <h5>Crypto Payment</h5>
+            <p>Able to conduct cryptocurrency transactions safely. Our payment system allows you to connect with your business model easily. Customize crypto payment systems according to your requirements.
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -------- END Content Presentation Docs ------- -->
+  <section class="py-7">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mx-auto text-center">
+          <h2 class="mb-0">Our Goal</h2>
+          <h2 class="mb-3">1,435,000 web developers</h2>
+          <p class="lead">Our vision is to become one of the world's best blockchain development company to assist all customers expanding their own business or new business. Our mission is to achieve the expectations of our customers, continuously update technical capabilities, and provide the best blockchain technology with the most efficient agile development model. </p>
+        </div>
+      </div>
+      <div class="row mt-6">
+        <div class="col-lg-4 col-md-8">
+          <div class="card card-plain">
+            <div class="card-body">
+              <div class="author">
+                <div class="name">
+                  <h6 class="mb-0 font-weight-bold">Lisa Driver, MI
+
+                  </h6>
+                </div>
+              </div>
+              <p class="mt-4">“Have customers review you and share what they had to say.
+                Click to edit and add their testimonial.”</p>
+              
             </div>
           </div>
-        </nav>
-        <!-- End Navbar -->
-      </div>
-    </div>
-  </div>
-  <header>
-    
-    
-  </header>
-  <!-- -------- END HEADER 1 w/ text and image on right ------- -->
-  <section class="" id="head" style="padding: 0 !important;">
-    <div class="t0" 
-        style="
-          /*background-image: url(assets/img/headback.jpg);*/
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position: center;
-          background-color:#fff3db;
-          max-height: 100px !important;" loading="lazy">
-
-      <div class="container">
-        
-      </div>
-    </div>
-  </section>
-
-  <section class="" id="main" style="padding: 0 !important;">
-
-      <div class="t1" 
-        style="
-          background-image: url(assets/img/home.jpg);
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position: center;
-          background-color:#fff3db;
-          max-width: 1200px;
-          max-height: 1041px !important;
-          margin: auto;" loading="lazy">
-
-
-      </div>
-      <div class="container">
-        
-      </div>
-  </section>
-  
-  <section class="" id="about" style="padding: 0 !important;">
-    <div class="t2" 
-        style="
-            background-image: url(assets/img/about.jpg);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;            
-            max-height: 1421px !important;
-            background-color:#fff3db;" loading="lazy">
-
-      <div class="container">
-        
-      </div>
-    </div>
-  </section>
-
-  <section class="" id="tradeFlow" style="padding: 0 !important;">
-    <div class="t3" 
-        style="
-            background-image: url(assets/img/flow.jpg);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;            
-            max-height: 2647px !important;
-            background-color:#fff3db;" loading="lazy">
-
-      <!-- <div class="container">
-        <img  src="./assets/img/_加入會員.png">
-      </div> -->
-      
-    </div>
-  </section>
-
-  <section class="" id="tradeFlow" style="padding: 0 !important;">
-    <div class="min-vh-10" 
-        style="
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            min-height: 10vh !important;
-            background-color:#fff3db;" loading="lazy">
-    <div class="container"
-            style="display: flex;
-            justify-content: center;">
-      <img 
-        style="width: 33vw;
-        height: auto;" src="assets/img/joinmember.png" onclick="toJoin()">
-    </div>
-
-  </section>
-
-  <section class="" id="attention" style="padding: 0 !important;">
-    <div class="t4" 
-        style="
-            background-image: url(assets/img/attention.jpg);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;            
-            max-height: 1061px !important;
-            background-color:#fff3db;" loading="lazy">
-
-      <div class="container">
-        
-      </div>
-    </div>
-  </section>
-
-  <section class="" id="term" style="padding: 0 !important;">
-    <div class="t5" 
-        style="
-            background-image: url(assets/img/term.jpg);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            max-height: 1275px !important;
-            background-color:#fff3db;" loading="lazy">
-
-      <div class="container">
-        
-      </div>
-    </div>
-  </section>
-  <section class="" id="QA" style="padding: 0 !important;">
-    <div class="t6" 
-        style="
-            background-image: url(assets/img/qa.jpg);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            max-height: 3852px !important;            
-            background-color:#fff3db;" loading="lazy">
-
-      <div class="container">
-        
-      </div>
-    </div>
-  </section>
- 
-
-  <section class="" id="join" style="padding: 0 !important;">
-      
-      <div class="t7" 
-          style="
-              background-image: url(assets/img/qrcback.jpg);
-              background-size: cover;
-              max-height: 40vh !important;       
-              background-color:#731d04;" loading="lazy">    
-              <div class="container"
-              style="display: flex;
-              justify-content: center;">
-              <a href="https://line.me/ti/p/~@ctcoin">
-                <img class="t7" 
-                style="max-height: 40vh !important;" 
-                src="./assets/img/qr.JPG""
-                >
-              </a>
-          </div>          
-      </div>
-    
-    
-    
-  </section>
-  <section class="" id="foot2" style="padding: 0 !important;">
-    <div class="t8" 
-        style="
-
-            background-image: url(assets/img/footer.jpg);
-            background-size: cover;
-            background-position: center;
-            min-height: calc(100vw * 348 / 1200) !important;  
-            max-height: calc(100vw * 348 / 1200) !important;       
-            background-color:#731d04;" loading="lazy">
-
-      <div class=" t8"
-        style="
-        flex-direction: column;
-        justify-content: center;
-        max-height: 348 !important;
-        position: absolute;
-        left: 45%;
-        display: flex;
-        min-height: calc(100vw * 348 / 1200) !important;  
-        max-height: calc(100vw * 348 / 1200) !important;">
-        <div 
-          style="display: flex;
-          justify-content: left;
-          align-items: center;">
-            <a style="display: flex;
-            justify-content: left;
-            margin: 7px;
-            align-items: center;">
-              <img 
-              style="max-height: 6vh !important;
-              max-width: 5vw !important;
-              margin-right: 10px;" 
-                src="assets/img/ctcoinemail.png">
-                <span style="font-size: 3vw; color: white;"> chengtai885@gmail.com </span>
-            </a>            
         </div>
-        <div 
-          style="display: flex;
-          justify-content: left;
-          align-items: center;">
-            <a style="display: flex;
-            justify-content: left;
-            margin: 7px;
-            align-items: center;"
-            href="https://www.facebook.com/ctcoin2228">
-              <img 
-              style="max-height: 5vh !important;
-              max-width: 5vw !important;
-              margin-right: 10px;"
-                src="assets/img/ctcoinfb.png">
-                <span style="font-size: 3vw; color: white;"> facebook / ctcoin2228 </span>
-            </a>
-           </div>
-        <div 
-          style="display: flex;
-          justify-content: left;
-          align-items: center;">
-             <a style="display: flex;
-             justify-content: left;
-             margin: 7px;
-             align-items: center;"
-             href="https://line.me/ti/p/~@ctcoin">
-              <img 
-              style="max-height: 5vh !important;
-              max-width: 5vw !important;
-              margin-right: 10px;" 
-                src="assets/img/ctcoinline.png">
-                <span style="font-size: 3vw; color: white;"> @ctcoin </span>
-             </a>        
+        <div class="col-lg-4 col-md-8 ms-md-auto">
+          <div class="card bg-gradient-primary">
+            <div class="card-body">
+              <div class="author align-items-center">
+                <div class="name">
+                  <h6 class="text-white mb-0 font-weight-bold">TangTech CEO</h6>
+                </div>
+              </div>
+              <p class="mt-4 text-white">"Testimonials are a great way to share positive feedback you have received and encourage others to work with you. Add your own here.”</p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-8">
+          <div class="card card-plain">
+            <div class="card-body">
+              <div class="author">
+                <div class="name">
+                  <h6 class="mb-0 font-weight-bold">Morgan James, NY
+
+                  </h6>
+                </div>
+              </div>
+              <p class="mt-4">“Have customers review you and share what they had to say.
+                Click to edit and add their testimonial.”</p>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="horizontal dark my-5">
+    </div>
+  </section>
+  <section class="py-sm-7" id="pricing-now-ui">
+    <div class="bg-gradient-primary position-relative">
+      <div class="container pb-lg-8 pb-7 pt-5 postion-relative z-index-2 position-relative">
+        <div class="row">
+          <div class="col-md-7 mx-auto text-center">
+            <h3 class="text-white">Why Choose Us ?
+            </h3>
+            <p class="text-white">Providing hundreds of customers with blockchain implementation and giving innovative idea
+
+              Proficient Blockchain Developers
+              
+              Modern Blockchain Technology and Strategy
+              
+              Innovative Customized Solutions
+              
+              Personal Blockchain Consultant</p>
+          </div>
+        </div>
+      </div>x
+    </div>
+  </section>
+  <footer class="footer pt-5 mt-5">
+    <hr class="horizontal dark mb-5">
+    <div class="container">
+      <div class=" row">
+        <div class="col-12 mb-4 ms-auto">
+          <div>
+            <h6 class="font-weight-bolder">AIO Digital Technology</h6>
+            <h6 class="font-weight-bolder">support: wowereitklaus2023@gmail.com
+            </h6>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="text-center">
+            <p class="my-4 text-sm"> © <script>
+                document.write(new Date().getFullYear())
+              </script>  AIO Digital Technology </a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </section>
-    <!-- START Blogs w/ 3 rows w/ image on left & title, text, author on end-->
-
-
-    <!-- END Blogs w/ 3 rows w/ image on left & title, text, author on end-->
-    <!-- -------   START PRE-FOOTER 2 - simple social line w/ title & 3 buttons    -------- -->
-    
-    <!-- -------   END PRE-FOOTER 2 - simple social line w/ title & 3 buttons    -------- -->
-  </div>
-  <footer class="footer pt-5 mt-5" style="background-color:#731d04;padding: 0 !important;">
-   
   </footer>
   <!--   Core JS Files   -->
-  <script src="./assets/js/core/popper.min.js"></script>
-  <script src="./assets/js/core/bootstrap.min.js"></script>
+  <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
   <script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
   <!--  Plugin for TypedJS, full documentation here: https://github.com/mattboldt/typed.js/ -->
   <script src="./assets/js/plugins/typedjs.js"></script>
@@ -470,18 +282,73 @@
   <script src="./assets/js/plugins/parallax.min.js"></script>
   <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
   <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+  <!--  Plugin for the GlideJS Carousel, full documentation here: http://kenwheeler.github.io/slick/ -->
+  <script src="./assets/js/plugins/glidejs.min.js" type="text/javascript"></script>
   <!--  Plugin for the blob animation -->
   <script src="./assets/js/plugins/anime.min.js" type="text/javascript"></script>
-  <!-- Control Center for Material UI Kit: parallax effects, scripts for the example pages etc -->
+  <!-- Chart JS -->
+  <script src="./assets/js/plugins/chartjs.min.js"></script>
+  <!-- Control Center foe Now UI Design System: parallax effects, scripts for the example pages etc -->
   <!--  Google Maps Plugin    -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>
+  <script src="./assets/js/now-design-system-pro.min.js?v=2.2.0" type="text/javascript"></script>
+  <script type="text/javascript">
+    if (document.getElementById('state1')) {
+      const countUp = new CountUp('state1', document.getElementById("state1").getAttribute("countTo"));
+      if (!countUp.error) {
+        countUp.start();
+      } else {
+        console.error(countUp.error);
+      }
+    }
+    if (document.getElementById('state2')) {
+      const countUp1 = new CountUp('state2', document.getElementById("state2").getAttribute("countTo"));
+      if (!countUp1.error) {
+        countUp1.start();
+      } else {
+        console.error(countUp1.error);
+      }
+    }
+    if (document.getElementById('state3')) {
+      const countUp2 = new CountUp('state3', document.getElementById("state3").getAttribute("countTo"));
+      if (!countUp2.error) {
+        countUp2.start();
+      } else {
+        console.error(countUp2.error);
+      };
+    }
+
+    var el = document.getElementById('navbarPresentationShadow');
+    var distance = 58;
+
+    function scrollNavbarShadow() {
+      if (this.pageYOffset > distance) {
+        el.classList.remove('shadow-none');
+        el.classList.add('shadow');
+      } else {
+        el.classList.add('shadow-none');
+        el.classList.remove('shadow');
+      }
+    }
+
+    window.addEventListener("scroll", function() {
+      scrollNavbarShadow();
+    });
+  </script>
+  <script>
+    if (document.getElementsByClassName('page-header')) {
+      window.addEventListener('scroll', function() {
+        var scrollPosition = window.pageYOffset;
+        var bgParallax = document.querySelector('.page-header');
+        var limit = bgParallax.offsetTop + bgParallax.offsetHeight;
+        if (scrollPosition > bgParallax.offsetTop && scrollPosition <= limit) {
+          bgParallax.style.backgroundPositionY = (50 - 10 * scrollPosition / limit * 3) + '%';
+        } else {
+          bgParallax.style.backgroundPositionY = '50%';
+        }
+      });
+    }
+  </script>
 </body>
-
-<script>
-  function toJoin(){
-    window.location.hash = "join";
-  }
-
-</script>
 
 </html>
